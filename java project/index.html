@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Student Fee System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+    </div>
+
+    <main class="wrap">
+        <section class="panel">
+            <div class="brand">
+                <div class="logo">SF</div>
+                <div>
+                    <h1>Student Fee System</h1>
+                    <p>Login to manage students and fees</p>
+                </div>
+            </div>
+
+            <form id="loginForm" class="form" novalidate>
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" placeholder="Enter username" autocomplete="username" />
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="pass">
+                        <input id="password" type="password" placeholder="Enter password"
+                            autocomplete="current-password" />
+                        <button type="button" id="togglePass" class="toggle" aria-label="Show password">👁</button>
+                    </div>
+                </div>
+
+                <button class="btn primary" style="width: 100%; justify-content: center;" type="submit">Login</button>
+
+                <div id="loginMsg" class="msg" aria-live="polite"></div>
+
+                <div class="demo">
+                    <div class="demo-title">Demo Credentials</div>
+                    <div class="demo-row"><span>Username:</span> <b>admin</b></div>
+                    <div class="demo-row"><span>Password:</span> <b>Admin@123</b></div>
+                </div>
+            </form>
+
+            <footer class="foot">
+                <span>Secure Login System • v1.0</span>
+            </footer>
+        </section>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
